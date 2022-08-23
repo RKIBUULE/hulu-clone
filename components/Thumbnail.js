@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { forwardRef } from 'react';
 import Image from 'next/image';
 import {ThumbUpIcon} from "@heroicons/react/outline";
-import {forwardRef} from "react";
+// import  from "react";
 
 
 const Thumbnail = forwardRef(({result}, ref) => {
@@ -20,7 +20,7 @@ const Thumbnail = forwardRef(({result}, ref) => {
         }
         height={1000}
         width={1920}
-      />
+       alt=""/>
       <div className='p-2'>
         <p className='truncate max-w-md'>{result.overview}</p>
         <h2 className='mt-1 text-2xl text-white transition-all duration-100 ease-in-out group-hover:font-bold'>
@@ -36,4 +36,4 @@ const Thumbnail = forwardRef(({result}, ref) => {
   )
 })
 
-export default Thumbnail
+export default Thumbnail;
