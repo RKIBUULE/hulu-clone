@@ -6,6 +6,7 @@ import{
     SearchIcon,
     UserIcon
 } from "@heroicons/react/outline"
+import Image from "next/image";
 
 import React from 'react';
 import HeaderItem from './HeaderItem';
@@ -23,7 +24,7 @@ function Header () {
             <HeaderItem  title='SEARCH' Icon={SearchIcon}/>
             <HeaderItem  title='ACCOUNT' Icon={UserIcon}/>
           </div>
-            <img
+            <Image
             className='object-contain'
             src="https://links.papareact.com/ua6" 
             width={200}
